@@ -26,9 +26,16 @@
   width: 100px;
   margin-left: 15%;
 }
+.zindexMio {
+  z-index: 40 !important;
+  border: 2px solid red;
+}
 .redSvg {
   width: 300px;
   position: absolute;
+  top: 850px;
+  left: 250px;
+  z-index: 30;
 }
 
 .negritaP {
