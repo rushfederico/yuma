@@ -7,13 +7,13 @@
 #primerDiv {
   margin: 0 !important;
   width: 100% !important;
-
+  display: flex !important;
   border: 2px solid green !important;
 }
 
 #logoContainer {
   border: 2px solid red;
-
+  flex: 1 !important;
   padding-top: 2%;
   padding-left: 5%;
   display: flex;
@@ -40,7 +40,7 @@
 
 #formContainer {
   border: 2px solid red;
-
+  flex: 1 !important;
   margin-left: 25%;
   margin-right: 15%;
   padding-left: 3%;
