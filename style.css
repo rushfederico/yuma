@@ -28,7 +28,11 @@
 }
 .zindexMio {
   z-index: 40 !important;
+  position: relative;
   border: 2px solid red;
+}
+.padingueado {
+  padding-top: 15%;
 }
 .redSvg {
   width: 300px;
