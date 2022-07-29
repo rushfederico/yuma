@@ -3,84 +3,211 @@
   --green: #32765d;
   --orange: #ed4034;
 }
+/* head */
+#primerDiv {
+  margin: 0 !important;
+  width: 100% !important;
 
-  body {
-	background-color: var(--blue);
-  }
-
-@font-face {
-  font-family: 'Montserrat-Bold';
-  src: url(fonts/Montserrat-Bold.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat-SemiBold';
-  src: url(fonts/Montserrat-SemiBold.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat-Light';
-  src: url(fonts/Montserrat-Light.ttf) format('truetype');
+  border: 2px solid green !important;
 }
 
+#logoContainer {
+  border: 2px solid red;
+
+  padding-top: 2%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#logoPosta {
+  width: 150px;
+}
+
+#logoContainer p {
+  margin-top: 100px;
+  margin-left: 100px;
+  color: #004e62;
+  font-size: 40px;
+}
+
+#iGriega {
+  width: 50px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+#formContainer {
+  border: 2px solid red;
+
+  margin-left: 25%;
+  margin-right: 15%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 25%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+#head h1 {
+  color: var(--green);
+  font-size: 1.5em;
+  line-height: 1.6em;
+  font-family: "TitilliumWeb-SemiBold";
+}
+#head h1 span {
+  font-family: "TitilliumWeb-Light";
+}
+#head #logo,
+#head h1,
+#head #headerBeneficios {
+  padding: 30px;
+}
+#head {
+  background-image: url("img/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  height: 140vh;
+  padding-bottom: 100px;
+  display: flex !important;
+}
+/* .............. */
+.sectionHero {
+}
+#theForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 40%;
+}
+
+#theForm .formSide {
+  flex: 1;
+}
+#formLeft {
+}
+#formRight {
+}
+
+.theInput {
+  background-color: transparent !important;
+  border: 0 0 2px 0 solid #fff !important;
+  margin-bottom: 5%;
+}
+
+.theInput:focus {
+  outline: none !important;
+}
+
+::placeholder {
+  color: #fff !important;
+  opacity: 1;
+  font-style: italic;
+}
+
 @font-face {
-  font-family: 'Montserrat-Regular';
-  src: url(fonts/Montserrat-Regular.ttf) format('truetype');
+  font-family: "TitilliumWeb-Black";
+  src: url("Titillium_Web/TitilliumWeb-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-Bold";
+  src: url("Titillium_Web/TitilliumWeb-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-BoldItalic";
+  src: url("Titillium_Web/TitilliumWeb-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-ExtraLight";
+  src: url("Titillium_Web/TitilliumWeb-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-ExtraLightItalic";
+  src: url("Titillium_Web/TitilliumWeb-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-Italic";
+  src: url("Titillium_Web/TitilliumWeb-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-Light";
+  src: url("Titillium_Web/TitilliumWeb-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-LightItalic";
+  src: url("Titillium_Web/TitilliumWeb-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-Regular";
+  src: url("Titillium_Web/TitilliumWeb-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-SemiBold";
+  src: url("Titillium_Web/TitilliumWeb-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TitilliumWeb-SemiBoldItalic";
+  src: url("Titillium_Web/TitilliumWeb-SemiBoldItalic.ttf") format("truetype");
 }
 
 * {
-  font-family: 'Montserrat-Regular', sans-serif;
+  font-family: "TitilliumWeb-Regular", sans-serif;
 }
-.bg-marca{
-  background-color: #004e62c7;  
+.bg-marca {
+  background-color: #004e62c7;
 }
-h3{
-	font-family: 'Montserrat-SemiBold';
-	letter-spacing: 1px;
-	font-size: 1.6em;
+h3 {
+  font-family: "TitilliumWeb-SemiBold";
+  letter-spacing: 1px;
+  font-size: 1.6em;
 }
 /*
 h2,
 h3:not(h3 .inner-cuadro),
 h4 {
   letter-spacing: .2rem;
-  font-family: 'Montserrat-Light', sans-serif;
+  font-family: 'TitilliumWeb-Light', sans-serif;
 }
 */
 .bold {
   font-weight: 500;
 }
 
-.hidden{
-	display: none;
+.hidden {
+  display: none;
 }
 /* FORMULARIO */
-.ml{
-	margin-left: 2%;
+.ml {
+  margin-left: 2%;
 }
-.campo{
-	float: left;
-	margin-bottom: 10px;
-	width: 49%;
+.campo {
+  float: left;
+  margin-bottom: 10px;
+  width: 49%;
 }
-.campoFull{
-	border: 0;
-	margin-bottom: 10px;
-	width: 100%;
+.campoFull {
+  border: 0;
+  margin-bottom: 10px;
+  width: 100%;
 }
-label,	
+label,
 .campo,
 .campoFull,
-.form-control{
-	font-size: 0.9em;
-}	
 label.error {
-	color: #e42320;
-    font-size: 0.85em;
+  color: #e42320;
+  font-size: 0.85em;
 }
-#livomLink a{
-	color: var(--blue);
-	font-size: 0.7em;
+#livomLink a {
+  color: var(--blue);
+  font-size: 0.7em;
 }
-
 
 /*  Productos */
 
@@ -101,114 +228,92 @@ label.error {
   margin-top: -35px;
 }
 
-.p-60{
+.p-60 {
 }
 
-#gracias{
-    background-color: #FFFFFFd1;
-    padding: 20px;
-    font-size: 0.9em;
-    color: var(--green);
-	position: absolute;
-	top: 100px;
+#gracias {
+  background-color: #ffffffd1;
+  padding: 20px;
+  font-size: 0.9em;
+  color: var(--green);
+  position: absolute;
+  top: 100px;
 }
-/* head */
-#head h1{
-	color: var(--green);
-	font-size: 1.5em;
-	line-height: 1.6em;
-	font-family: 'Montserrat-SemiBold';
-}
-#head h1 span{
-	font-family: 'Montserrat-Light';
-}
-#head #logo,
-#head h1,
-#head #headerBeneficios{
-	padding: 30px;
-}
-#head {
-  background-image: url("img/header.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  padding-bottom: 100px;
-  min-height: 100vh;
-}
+
 ul#headerBeneficios,
 ul#headerServicios {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 ul#headerServicios {
-    padding: 40px;
-	position: absolute;
-    bottom: 0;
-    margin: 0;
-    right: -12px;
-    padding-right: 12px;
-	width: 102%;
+  padding: 40px;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  right: -12px;
+  padding-right: 12px;
+  width: 102%;
 }
 ul#headerBeneficios li,
-ul#headerServicios li{
-	margin-bottom: 30px;
-    font-size: 1.2em;
+ul#headerServicios li {
+  margin-bottom: 30px;
+  font-size: 1.2em;
 }
-ul#headerServicios li{
-	color: #fff;
+ul#headerServicios li {
+  color: #fff;
 }
-ul#headerServicios li img.h{
-    height: 30px;
+ul#headerServicios li img.h {
+  height: 30px;
 }
-ul#headerServicios li img.w{
-    width: 20px;
+ul#headerServicios li img.w {
+  width: 20px;
 }
-ul#headerServicios li img{
-	margin-right: 10px;
+ul#headerServicios li img {
+  margin-right: 10px;
 }
-ul#headerBeneficios li img{
-    height: 25px;
-	margin-right: 10px;
+ul#headerBeneficios li img {
+  height: 25px;
+  margin-right: 10px;
 }
 
-ul#headerBeneficios li{
-	color: var(--blue);
-	font-size: 1.2em;
+ul#headerBeneficios li {
+  color: var(--blue);
+  font-size: 1.2em;
 }
-ul#headerBeneficios li span{
-	font-family: 'Montserrat-SemiBold';
+ul#headerBeneficios li span {
+  font-family: "TitilliumWeb-SemiBold";
 }
-#headerContacto{
-	text-align: right;
-	padding-top: 30px;
-	margin-bottom: 60px;
+#headerContacto {
+  text-align: right;
+  padding-top: 30px;
+  margin-bottom: 60px;
 }
-#headerContacto a{
-	color: #FFF;
-	text-decoration: none;
+#headerContacto a {
+  color: #fff;
+  text-decoration: none;
 }
-#headerContacto span{
-	font-size: 1.1em;
-    letter-spacing: 3px;
-    margin-right: 10px;
+#headerContacto span {
+  font-size: 1.1em;
+  letter-spacing: 3px;
+  margin-right: 10px;
 }
-#headerContacto span#telefono{
-	font-size: 0.6em;
-    text-align: center;
-    display: inline-block;
-    margin: 0;
-    color: var(--green);
+#headerContacto span#telefono {
+  font-size: 0.6em;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  color: var(--green);
 }
-#headerContacto div{
-	color: #FFF;
-	background-color: var(--green);
-	display: inline-block;
-    padding: 3px 25px;
+#headerContacto div {
+  color: #fff;
+  background-color: var(--green);
+  display: inline-block;
+  padding: 3px 25px;
 }
-#headerContacto img{
-	height: 21px;
-	margin-left: 10px;
-	margin-top: -5px;
+#headerContacto img {
+  height: 21px;
+  margin-left: 10px;
+  margin-top: -5px;
 }
 /* historia */
 #historia {
@@ -222,35 +327,35 @@ ul#headerBeneficios li span{
   position: relative;
   padding-top: 70px;
 }
-#historia h2{
-	color: #fff;
-	text-align: center;
-	font-family: 'Montserrat-Bold';
-	font-size: 1.5em;
-	margin-top: -100px;
-	width: 100%;
-	text-shadow: #5e5e5e 0.5px 0.5px;
-	letter-spacing: 2px;
+#historia h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "TitilliumWeb-Bold";
+  font-size: 1.5em;
+  margin-top: -100px;
+  width: 100%;
+  text-shadow: #5e5e5e 0.5px 0.5px;
+  letter-spacing: 2px;
 }
-#historia #video{
-	cursor: pointer;
-	margin: auto;
-    display: block;
-	width: 90%;
+#historia #video {
+  cursor: pointer;
+  margin: auto;
+  display: block;
+  width: 90%;
 }
-#historia #elPolo{
-	background-color: #FFF;
-	position: relative;
-	padding-top: 60px;
-	padding-left: 40px;
-	padding-bottom: 100px;
-	margin-top: 80px;
+#historia #elPolo {
+  background-color: #fff;
+  position: relative;
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-bottom: 100px;
+  margin-top: 80px;
 }
-#historia #elPolo p{
-	font-size: 1.2em;
-	line-height: 2em;
-	margin-top: 40px;
-	width: 90%;
+#historia #elPolo p {
+  font-size: 1.2em;
+  line-height: 2em;
+  margin-top: 40px;
+  width: 90%;
 }
 /* valores */
 #valores {
@@ -263,136 +368,136 @@ ul#headerBeneficios li span{
   padding-bottom: 80px;
 }
 #ubicacion h3,
-#valores h3{
-	color: #FFF;
-	margin-bottom: 60px;
+#valores h3 {
+  color: #fff;
+  margin-bottom: 60px;
 }
-#valores #valoresText{
-	background-color: #32765dd1;
-	position: relative;
-	padding-top: 100px;
-	padding-bottom: 30px;
-	padding-left: 50px;
-    padding-right: 50px;
+#valores #valoresText {
+  background-color: #32765dd1;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 #ubicacion p,
-#valores p{
-	color: #fff;
-	font-size: 1.2em;
-	line-height: 2em;
-	margin-bottom: 30px;
+#valores p {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 2em;
+  margin-bottom: 30px;
 }
-#valores p#valoresApuesta{
-	font-family: 'Montserrat-SemiBold';
-	color: var(--green);
-	background-color: #FFF;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-right:20px;
-	padding-left:50px;
-	margin-left: -50px;
+#valores p#valoresApuesta {
+  font-family: "TitilliumWeb-SemiBold";
+  color: var(--green);
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 50px;
+  margin-left: -50px;
 }
-#ubicacion{
-	background-color: #FFF;
+#ubicacion {
+  background-color: #fff;
 }
-#fotosText{
-	margin-left: -12px;
+#fotosText {
+  margin-left: -12px;
 }
 #fotosText,
-#ubicacionText{
-	/* position: relative;*/
-	padding-top: 120px;
-	padding-bottom: 30px;
-	padding-left: 50px;
-    padding-right: 50px;
+#ubicacionText {
+  /* position: relative;*/
+  padding-top: 120px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
-#ubicacion #mapWrapper{
-	padding-top: 120px;
-    margin-left: -15px;
-    padding-left: 15px;
-    height: 100%;
+#ubicacion #mapWrapper {
+  padding-top: 120px;
+  margin-left: -15px;
+  padding-left: 15px;
+  height: 100%;
 }
-#ubicacion #mapWrapper iframe{
-	border-left:20px solid;
-	border-top:20px solid;
-	border-bottom:20px solid;
-	border-right:20px solid;
-	height: 350px;
+#ubicacion #mapWrapper iframe {
+  border-left: 20px solid;
+  border-top: 20px solid;
+  border-bottom: 20px solid;
+  border-right: 20px solid;
+  height: 350px;
 }
-#ubicacionMapPic{
-	padding-left: 12px;
-	margin-left: -12px;
+#ubicacionMapPic {
+  padding-left: 12px;
+  margin-left: -12px;
 }
-#proyectoFotos{
-	background-color: #fff;
+#proyectoFotos {
+  background-color: #fff;
 }
-#carouselImg{
+#carouselImg {
 }
-#carouselImg .carousel-inner{
-	padding-bottom: 50px;
+#carouselImg .carousel-inner {
+  padding-bottom: 50px;
 }
-#contacto{
+#contacto {
   background-image: url("img/contacto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   padding-top: 40px;
 }
-#contactoWrapper{
-	background-color: #FFFFFFd1;
-	padding: 40px;
+#contactoWrapper {
+  background-color: #ffffffd1;
+  padding: 40px;
 }
-.carousel-item img{
-	width: 100%;
+.carousel-item img {
+  width: 100%;
 }
 
 .carousel-control-next-icon {
-    background-image: url("img/right.jpg");
+  background-image: url("img/right.jpg");
 }
 .carousel-control-prev-icon {
-    background-image: url("img/left.jpg");
+  background-image: url("img/left.jpg");
 }
 
-footer{
-	background-color: #004e62;
-	padding-top: 40px;
-	padding-bottom: 40px;
+footer {
+  background-color: #004e62;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
-footer .social{
-	margin-left: 5px;
-	width: 21px;
+footer .social {
+  margin-left: 5px;
+  width: 21px;
 }
-footer #logoFooter{
-	width: 250px;
+footer #logoFooter {
+  width: 250px;
 }
 
-.left-band.white{
-	background-color: #FFF;
+.left-band.white {
+  background-color: #fff;
 }
-.left-band.blue{
-	background-color: var(--blue);
+.left-band.blue {
+  background-color: var(--blue);
 }
-.left-band{
-	position: absolute;
-	left: 0;
-	top: 90px;
-	width: 10px;
-	height: 130px;
+.left-band {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  width: 10px;
+  height: 130px;
 }
-.right-band{
-	margin-left: -40px;
-	font-size: 1em;
-	text-align: right;
-	letter-spacing: 1px;
+.right-band {
+  margin-left: -40px;
+  font-size: 1em;
+  text-align: right;
+  letter-spacing: 1px;
 }
-.right-band.blue span{
-	background-color: var(--blue);
-	color: #FFF;	
+.right-band.blue span {
+  background-color: var(--blue);
+  color: #fff;
 }
-#historia .right-band.blue span{
-	margin-left: -66px;
-    font-size: 0.9em;
-	padding: 5px 0px 5px 3px;
+#historia .right-band.blue span {
+  margin-left: -66px;
+  font-size: 0.9em;
+  padding: 5px 0px 5px 3px;
 }
 .contacto p,
 .about-contenido-seguro p {
@@ -407,15 +512,8 @@ footer #logoFooter{
   color: var(--blue);
 }
 
-.form-control {
-  border: 1px solid var(--blue);
-  background-color: #FFFFFFd1;
-}
-.success.circle{
-	color: var(--green);
-}
-.form-control.error {
-  border: 1px solid var(--green);
+.success.circle {
+  color: var(--green);
 }
 
 textarea {
@@ -423,20 +521,20 @@ textarea {
 }
 
 .btn {
-	background-color: var(--green);
-  color: #FFFFFF;
-  padding: .2rem 1rem;
+  background-color: var(--green);
+  color: #ffffff;
+  padding: 0.2rem 1rem;
 }
 
 /* About-1 */
 
 .bg-green {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: var(--green);
 }
 
 .bg-blue {
-  color:var(--green);
+  color: var(--green);
   background-color: var(--blue);
 }
 
@@ -461,12 +559,12 @@ textarea {
 }
 
 .about-triplen__text h3 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 img#about-triplen-bag {
   width: 40%;
-	max-width: 215px;
+  max-width: 215px;
 }
 img#about-triplen-bag.t {
   transition: 1.2s;
@@ -484,128 +582,127 @@ img#about-triplen-bag.ma {
 
 /* Innovacion-sustentabilidad */
 
-.innovacion-sustentabilidad{
+.innovacion-sustentabilidad {
   background-image: url(img/replen-bg-1.png); /* Reemplazar!! */
   background-repeat: no-repeat;
   background-size: cover;
-  
 }
 .innovacion-sustentabilidad h3 {
   color: var(--green);
 }
 
 .innovacion-sustentabilidad__imagen img {
-  opacity: .8;
- /* padding: 2rem; */
+  opacity: 0.8;
+  /* padding: 2rem; */
 }
 
 .innovacion-sustentabilidad__text {
-  background-color: #FFFFFFd1;
+  background-color: #ffffffd1;
   /*padding: 15px 20px;*/
 }
 
-#replen-ciclo{
-	background-image: url('./img/replen-ciclo-rm.png');
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-/*	min-width: 385px; */
-	min-height: 384px;
-	max-width: 500px;
-	max-height: 499px;
+#replen-ciclo {
+  background-image: url("./img/replen-ciclo-rm.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*	min-width: 385px; */
+  min-height: 384px;
+  max-width: 500px;
+  max-height: 499px;
 }
-#replen-ciclo img{
-	margin: auto;
-    width: 180px;
+#replen-ciclo img {
+  margin: auto;
+  width: 180px;
 }
-#replen-ciclo img.t{
+#replen-ciclo img.t {
 }
-#replen-ciclo.ma img{
-	-webkit-animation:spin 2s linear ;
-    -moz-animation:spin 2s linear ;
-    animation:spin 2s linear ;
+#replen-ciclo.ma img {
+  -webkit-animation: spin 2s linear;
+  -moz-animation: spin 2s linear;
+  animation: spin 2s linear;
 }
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
 }
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 .historia p {
-    font-size: 1.1rem;
-    line-height: 2rem;
-    letter-spacing: 1px;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
 }
-  .contacto{
-    padding-left: 1rem;
-    padding-right: 1rem;
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-  } 
- #whatsapp{
-		position: fixed;
-		z-index: 9999;
-		bottom: 25px;
-		right: 20px;
-		width: 60px;
-		
-		transition: 0.3s;
-	}
-	#whatsapp:hover{
-		bottom: 30px;
-	}
-	#whatsapp img{
-		width: 100%;
-	} 
+.contacto {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#whatsapp {
+  position: fixed;
+  z-index: 9999;
+  bottom: 25px;
+  right: 20px;
+  width: 60px;
+
+  transition: 0.3s;
+}
+#whatsapp:hover {
+  bottom: 30px;
+}
+#whatsapp img {
+  width: 100%;
+}
 @media (min-width: 769px) {
-	
-	#head h1{
-		font-size: 2.1em;
-	}
-	#head #logo,
-	#head h1,
-	#head #headerBeneficios{
-		padding: 60px;
-	}
-	#historia .right-band.blue span{
-		padding: 5px 40px 5px 15px;
-	}
-	
-	.right-band{
-		margin-left: 0px;
-		font-size: 1.2em;
-	}
-	#historia h2{
-		font-size: 2.7em;
-	}
-	h3{
-		font-size: 2.3em;
-	}
-	#historia #elPolo{
-		padding-left: 80px;
-	}
-	.carousel-control-prev{
-		left: -15%;
-	}
-	.carousel-control-next{
-		right: -15%;
-	}
-	
-	
-	
-#intro {
-	
+  #head h1 {
+    font-size: 2.1em;
   }
-  
+  #head #logo,
+  #head h1,
+  #head #headerBeneficios {
+    padding: 60px;
+  }
+  #historia .right-band.blue span {
+    padding: 5px 40px 5px 15px;
+  }
+
+  .right-band {
+    margin-left: 0px;
+    font-size: 1.2em;
+  }
+  #historia h2 {
+    font-size: 2.7em;
+  }
+  h3 {
+    font-size: 2.3em;
+  }
+  #historia #elPolo {
+    padding-left: 80px;
+  }
+  .carousel-control-prev {
+    left: -15%;
+  }
+  .carousel-control-next {
+    right: -15%;
+  }
+
+  #intro {
+  }
+
   h2,
   h3 {
-   /* letter-spacing: .5rem; */
+    /* letter-spacing: .5rem; */
   }
 
   .historia {
@@ -614,11 +711,10 @@ img#about-triplen-bag.ma {
   .historia p {
     font-size: 1.2rem;
   }
-  
 
   /* Navbar */
 
-  .navbar{
+  .navbar {
     position: absolute;
     width: 100%;
   }
@@ -629,23 +725,23 @@ img#about-triplen-bag.ma {
   }
 
   #intro h2 {
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: "TitilliumWeb-Regular", sans-serif;
     font-size: 2rem;
     margin-top: 0rem;
     padding: 1.5rem 2rem;
   }
 
   .contacto p {
-    font-family: 'Montserrat-Light', sans-serif;
-    font-size: .8rem;
+    font-family: "TitilliumWeb-Light", sans-serif;
+    font-size: 0.8rem;
   }
 
-  .contacto{
+  .contacto {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-	margin-top: 0;
-	margin-bottom: 0;
-  } 
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
   /* About-1 */
 
@@ -665,8 +761,8 @@ img#about-triplen-bag.ma {
     margin-bottom: -8rem;
   }
 
-  .about-tricapa-imagen{
-	margin-left: 40px;
+  .about-tricapa-imagen {
+    margin-left: 40px;
     padding-right: 40px;
   }
   .about-tricapa-foto img {
@@ -694,10 +790,10 @@ img#about-triplen-bag.ma {
 
   .about-triplen__text h3 {
     color: var(--orange);
-    letter-spacing: .2rem;
-    margin-top: -7rem; 
+    letter-spacing: 0.2rem;
+    margin-top: -7rem;
     padding-bottom: 3rem;
-	  font-size: 1.95rem;
+    font-size: 1.95rem;
   }
 
   .about-triplen__text p,
@@ -705,79 +801,78 @@ img#about-triplen-bag.ma {
   .innovacion-sustentabilidad__text p {
     line-height: 1.3;
   }
-  
+
   /* About-contenido-seguro */
-  
+
   .about-contenido-seguro {
     height: 38rem;
   }
 
   .about-contenido-seguro h3 {
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: -12rem;
-    padding-bottom: 3rem; 
+    padding-bottom: 3rem;
   }
 
   img#contenido-seguro-bolsa {
     width: 100%;
-	max-width: 878px !important;
+    max-width: 878px !important;
     margin-left: -11rem;
     margin-top: -25rem;
   }
   img#contenido-seguro-bolsa.t {
-	transition: .5s;
+    transition: 0.5s;
   }
   img#contenido-seguro-bolsa.ma {
-	margin-top: -27rem;
+    margin-top: -27rem;
   }
   img#contenido-seguro-bolsa.ma15 {
-	margin-top: -29rem;
+    margin-top: -29rem;
   }
   img#contenido-seguro-bolsa.ma195 {
-	margin-top: -31rem;
+    margin-top: -31rem;
   }
 
   /* Innovacion-sustentabilidad */
   .innovacion-sustentabilidad {
     padding-left: 9rem;
- /*   padding-bottom: 10rem; */
+    /*   padding-bottom: 10rem; */
   }
-  .innovacion-sustentabilidad h3{
-	font-size: 1.95rem;
-	line-height: 3rem;
+  .innovacion-sustentabilidad h3 {
+    font-size: 1.95rem;
+    line-height: 3rem;
   }
-  .innovacion-sustentabilidad .img-container{
-	position: relative;
-}
+  .innovacion-sustentabilidad .img-container {
+    position: relative;
+  }
   img#reciclable-100 {
     /* margin-top: -1.8rem; */
-    opacity: .9;    
+    opacity: 0.9;
     width: 50%;
-	position: absolute;
-	top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   img#reciclable-100.t {
-    transition: .5s;
+    transition: 0.5s;
   }
   img#reciclable-100.ma {
-	  /* margin-top: -2.5rem; */
+    /* margin-top: -2.5rem; */
   }
   #innovacion-sustentabilidad h3 {
     color: var(--green);
   }
-  
+
   .innovacion-sustentabilidad__text {
     /*padding: 2rem 3.5rem; */
-	height: 100%;
-	margin-left: -12px;
+    height: 100%;
+    margin-left: -12px;
   }
-
 }
-.text-justify{
-	text-align: justify;
+.text-justify {
+  text-align: justify;
 }
 
 /*=== Trigger  ===*/
@@ -790,34 +885,34 @@ img#about-triplen-bag.ma {
 }
 
 .one {
--webkit-animation-delay: 0.4s;
--moz-animation-delay: 0.4s;
-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .two {
--webkit-animation-delay: 0.6s;
--moz-animation-delay: 0.6s;
-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 .three {
--webkit-animation-delay: 0.8s;
--moz-animation-delay: 0.8s;
-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 .four {
--webkit-animation-delay: 1s;
--moz-animation-delay: 1s;
-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .five {
--webkit-animation-delay: 1.2s;
--moz-animation-delay: 1.2s;
-animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 .six {
--webkit-animation-delay: 1.4s;
--moz-animation-delay: 1.4s;
-animation-delay: 1.4s;
+  -webkit-animation-delay: 1.4s;
+  -moz-animation-delay: 1.4s;
+  animation-delay: 1.4s;
 }
 
 /*=== FADE IN DOWN ===*/
