@@ -5,7 +5,7 @@
 }
 /* head */
 #primerDiv {
-/*  margin: 0 !important;
+  /*  margin: 0 !important;
   width: 100% !important;
   display: flex !important; */
   border: 2px solid green !important;
@@ -13,6 +13,7 @@
 
 #logoContainer {
   border: 2px solid red;
+  margin-top: 50px;
   /*flex: 1 !important;
   padding-top: 2%;
   padding-left: 5%;
@@ -22,20 +23,54 @@
 }
 
 #logoPosta {
-  width: 150px;
+  width: 100px;
+  margin-left: 15%;
+}
+.redSvg {
+  width: 300px;
+  position: absolute;
 }
 
-#logoContainer p {
-  margin-top: 100px;
-  margin-left: 100px;
+.negritaP {
+  font-weight: bold !important;
+}
+
+.cursivaP {
+  font-style: italic;
+}
+
+.verdeP {
   color: #004e62;
+}
+
+.blancoP {
+  color: white;
+}
+
+.sizeBig {
   font-size: 40px;
 }
 
-#iGriega {
-  width: 50px;
-  margin-top: 100px;
+.sizeNoTanBig {
+  font-size: 30px;
+}
+
+#logoContainer p {
+  margin-top: 50px;
   margin-left: 100px;
+  font-size: 50px;
+  margin-left: 220px;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+
+.griega {
+  width: 50px;
+}
+
+#iGriega1 {
+  margin-left: 220px;
+  margin-top: 200px;
 }
 
 #formContainer {
@@ -76,7 +111,7 @@ body {
 
   min-height: 100vh;
   padding-bottom: 100px;
-/*  display: flex !important; */
+  /*  display: flex !important; */
 }
 /* .............. */
 .sectionHero {
