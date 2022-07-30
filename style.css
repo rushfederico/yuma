@@ -4,6 +4,12 @@
   --orange: #ed4034;
 }
 
+#section5 {
+}
+
+#section5 .row {
+}
+
 #instaHeader {
   width: 30px;
 }
@@ -76,6 +82,10 @@ section .row {
   width: 100px;
   margin-left: 15%;
 }
+
+#logoFooter {
+  width: 100px;
+}
 .zindexMio {
   z-index: 40 !important;
   position: relative;
@@ -124,6 +134,10 @@ section .row {
   font-size: 1.5em;
 }
 
+.sizeNoTanTanBig {
+  font-size: 1em;
+}
+
 #logoContainer p {
   margin-top: 50px;
   margin-left: 100px;
@@ -155,6 +169,8 @@ section .row {
   margin-bottom: 25%;*/
 }
 
+#formContainer2 {
+}
 body {
   margin: 0;
   padding: 0;
@@ -198,6 +214,16 @@ body {
 #theForm .formSide {
   flex: 1;
 }
+
+#theForm2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#theForm2 .formSide {
+  flex: 1;
+}
 #formLeft {
 }
 #formRight {
@@ -213,9 +239,26 @@ body {
   outline: none !important;
 }
 
-::placeholder {
+.theInput::placeholder {
   color: #fff !important;
   opacity: 1;
+  font-style: italic;
+}
+
+.theInput2 {
+  background-color: transparent !important;
+
+  margin-bottom: 5%;
+}
+
+.theInput2:focus {
+  outline: none !important;
+}
+
+.theInput2::placeholder {
+  color: #004e62c7;
+  opacity: 1;
+  font-family: "TitilliumWeb-Italic";
   font-style: italic;
 }
 
@@ -573,9 +616,6 @@ footer {
 footer .social {
   margin-left: 5px;
   width: 21px;
-}
-footer #logoFooter {
-  width: 250px;
 }
 
 .left-band.white {
