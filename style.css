@@ -18,6 +18,28 @@ section .row {
   border: 8px solid orange;
 }
 
+#right2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3%;
+}
+
+#left3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 3%;
+}
+
+#textContainerTop {
+}
+
+#textContainerBottom {
+  align-self: flex-end;
+  text-align: end;
+}
+
 /* head */
 #primerDiv {
   /*  margin: 0 !important;
