@@ -5,17 +5,13 @@
 }
 
 section {
-  border: 2px solid red;
 }
 
 section .row {
-  border: 2px solid blue;
 }
 .leftDiv {
-  border: 8px solid green;
 }
 .rightDiv {
-  border: 8px solid orange;
 }
 
 #right2 {
@@ -45,11 +41,9 @@ section .row {
   /*  margin: 0 !important;
   width: 100% !important;
   display: flex !important; */
-  border: 2px solid green !important;
 }
 
 #logoContainer {
-  border: 2px solid red;
   margin-top: 50px;
   /*flex: 1 !important;
   padding-top: 2%;
@@ -66,7 +60,6 @@ section .row {
 .zindexMio {
   z-index: 40 !important;
   position: relative;
-  border: 2px solid red;
 }
 .padingueado {
   padding-top: 15%;
@@ -130,7 +123,6 @@ section .row {
 }
 
 #formContainer {
-  border: 2px solid red;
   /*flex: 1 !important;
   margin-left: 25%;
   margin-right: 15%;
@@ -189,7 +181,7 @@ body {
 
 .theInput {
   background-color: transparent !important;
-  border: 0 0 2px 0 solid #fff !important;
+
   margin-bottom: 5%;
 }
 
