@@ -3,6 +3,21 @@
   --green: #32765d;
   --orange: #ed4034;
 }
+
+section {
+  border: 2px solid red;
+}
+
+section .row {
+  border: 2px solid blue;
+}
+.leftDiv {
+  border: 8px solid green;
+}
+.rightDiv {
+  border: 8px solid orange;
+}
+
 /* head */
 #primerDiv {
   /*  margin: 0 !important;
@@ -39,6 +54,14 @@
   position: absolute;
   top: 850px;
   left: 250px;
+  z-index: 30;
+}
+
+.redSvg2 {
+  width: 300px;
+  position: absolute;
+  top: 1300px;
+
   z-index: 30;
 }
 
