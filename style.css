@@ -1,6 +1,7 @@
 :root {
   --blue: #056ca6;
-  --green: #32765d;
+  --grey: #b4bec3;
+  --green: #024f59;
   --orange: #ed4034;
 }
 
@@ -14,7 +15,7 @@
   width: 30px;
 }
 #socialContainer {
-  text-align: end;
+/*  text-align: end;*/
   padding-top: 50px;
 }
 section {
@@ -41,15 +42,15 @@ section .row {
 #left3 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding-right: 3%;
+/*  justify-content: flex-end;
+  padding-right: 3%;*/
 }
 #right3 {
   position: relative;
 }
 
 #textContainerTop {
-  margin-bottom: 10%;
+  margin-top: 15%;
 }
 
 #textContainerBotton img {
@@ -59,6 +60,8 @@ section .row {
 #textContainerBottom {
   align-self: flex-end;
   text-align: end;
+  justify-content: end;
+  margin-top: auto;
 }
 
 /* head */
@@ -80,7 +83,7 @@ section .row {
 
 #logoPosta {
   width: 100px;
-  margin-left: 15%;
+  /*margin-left: 15%;*/
 }
 
 #logoFooter {
@@ -94,19 +97,18 @@ section .row {
   padding-top: 15%;
 }
 .redSvg {
-  width: 250px;
+  width: 45%;
   position: absolute;
-  top: -75%;
-  left: 25%;
+  top: -51%;
+  right: 5%;
   z-index: 30;
 }
 
 .redSvg2 {
-  width: 250px;
+  width: 50%;
   position: absolute;
-  top: -75%;
-  left: 35%;
-
+  top: -54%;
+  right: 12px;
   z-index: 30;
 }
 
@@ -119,7 +121,7 @@ section .row {
 }
 
 .verdeP {
-  color: #004e62;
+  color: #024f59;
 }
 
 .blancoP {
@@ -127,33 +129,33 @@ section .row {
 }
 
 .sizeBig {
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .sizeNoTanBig {
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 .sizeNoTanTanBig {
   font-size: 1em;
 }
 
-#logoContainer p {
-  margin-top: 50px;
-  margin-left: 100px;
-  font-size: 2.5em;
+#headerContent{
+  padding-left: 5rem;
+  height: 100%;
+}
+#headerContent p {
+/*  margin-top: 50px;
   margin-left: 220px;
   line-height: 60px;
+  margin-left: 100px;*/
+  font-size: 1.8em;
   letter-spacing: 2px;
 }
 
 .griega {
-  width: 50px;
-}
-
-#iGriega1 {
-  margin-left: 220px;
-  margin-top: 200px;
+  width: 40px;
+  margin-bottom: 20px;
 }
 
 #iGriega2 {
@@ -176,18 +178,9 @@ body {
   padding: 0;
   width: 100% !important;
   box-sizing: border-box;
-}
-#head h1 {
-  color: var(--green);
-  font-size: 1.5em;
-  line-height: 1.6em;
-  font-family: "TitilliumWeb-SemiBold";
-}
-#head h1 span {
-  font-family: "TitilliumWeb-Light";
+  /*overflow-x: hidden;*/
 }
 #head #logo,
-#head h1,
 #head #headerBeneficios {
   padding: 30px;
 }
@@ -204,30 +197,6 @@ body {
 /* .............. */
 .sectionHero {
 }
-#theForm {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 40%;
-}
-
-#theForm .formSide {
-  flex: 1;
-}
-
-#theForm2 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-#theForm2 .formSide {
-  flex: 1;
-}
-#formLeft {
-}
-#formRight {
-}
 
 .theInput {
   background-color: transparent !important;
@@ -239,12 +208,20 @@ body {
   outline: none !important;
 }
 
-.theInput::placeholder {
+#head form ::placeholder {
   color: #fff !important;
   opacity: 1;
-  font-style: italic;
 }
-
+#head form .form-control,
+#formContainer2 form .form-control {
+  font-size: 1em;
+}
+#head form ::placeholder,
+#formContainer2 form ::placeholder {
+  font-style: italic;
+  font-weight: 400;
+  font-family: 'TitilliumWeb-LightItalic';  
+}
 .theInput2 {
   background-color: transparent !important;
 
@@ -256,7 +233,7 @@ body {
 }
 
 .theInput2::placeholder {
-  color: #004e62c7;
+  color: #024f59c7;
   opacity: 1;
   font-family: "TitilliumWeb-Italic";
   font-style: italic;
@@ -311,7 +288,7 @@ body {
   font-family: "TitilliumWeb-Regular", sans-serif;
 }
 .bg-marca {
-  background-color: #004e62c7;
+  background-color: #024f59e0;
 }
 h3 {
   font-family: "TitilliumWeb-SemiBold";
@@ -334,31 +311,90 @@ h4 {
   display: none;
 }
 /* FORMULARIO */
-.ml {
-  margin-left: 2%;
-}
-.campo {
-  float: left;
-  margin-bottom: 10px;
-  width: 49%;
-}
-.campoFull {
-  border: 0;
-  margin-bottom: 10px;
-  width: 100%;
-}
-label,
-.campo,
-.campoFull,
-label.error {
-  color: #e42320;
-  font-size: 0.85em;
-}
-#livomLink a {
-  color: var(--blue);
-  font-size: 0.7em;
+.hidden{
+	display: none !important;
 }
 
+.ml{
+	margin-left: 3%;
+}
+.ml3{
+	margin-left: 3.5%;
+}
+
+.campo{
+	float: left;
+	margin-bottom: 10px;
+	width: 48.5%;
+}
+.campo.campo3{
+	width: 31%;
+}
+.campoFull{
+	border: 0;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+#head label,	
+#head .campo,
+#head .campoFull,
+#head .form-control{
+	color: #fff;
+	font-size: 1em;
+	font-family: 'Poppins-Light', sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+}	
+input[type='radio']{
+	cursor: pointer;
+}
+#head label{
+	color: #fff;
+	font-weight: 400;
+	font-size: 1em;
+	margin-bottom: 0;
+}	
+.g-recaptcha > div.error{
+	border: 1px solid red;
+}
+label.error {
+	color: #e42320;
+    font-size: 0.85em;
+}
+#livomLink a{
+	color: #fff;
+	font-size: 0.9em;
+}
+
+#head .success.circle{
+	color: #FFF ;
+}
+#head .form-control:focus,
+#head .form-control {
+  color: #FFF;
+  border: 0;
+  border-bottom: 1px solid #FFF;
+  background-color: transparent;
+  padding-left: 1px;
+}
+.form-control.error {
+  border-bottom: 1px solid #e42320 !important;
+}
+
+#head form{
+  margin-top: 40%;
+  padding: 20px;
+}
+
+#formContainer2 .form-control:focus,
+#formContainer2 .form-control {
+  color: var(--green);
+  border: 0;
+  border-bottom: 1px solid var(--green);
+  background-color: transparent;
+  padding-left: 1px;
+}
 /*  Productos */
 
 .font-blue {
@@ -609,7 +645,7 @@ ul#headerBeneficios li span {
 }
 
 footer {
-  background-color: #004e62;
+  background-color: #024f59;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -667,12 +703,21 @@ textarea {
   resize: none;
 }
 
-.btn {
-  background-color: var(--green);
-  color: #ffffff;
-  padding: 0.2rem 1rem;
+#head .btn, #head .btn:hover {
+  background-color: var(--grey);
+  border: 0;
+  border-radius: 3px;
+  color: var(--green);
+  padding: 0.2rem 0.5rem;
 }
-
+#formContainer2 .btn, #head .btn:hover {
+  background-color: var(--green);
+  color: var(--grey);
+  border: 0;
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  
+}
 /* About-1 */
 
 .bg-green {
@@ -693,103 +738,6 @@ textarea {
   margin-top: 5rem;
 }
 
-.about-img-container {
-  height: 4rem;
-}
-
-/* About-tricapa */
-
-/* About Triplen */
-
-#about-triplen {
-  background-color: var(--orange);
-}
-
-.about-triplen__text h3 {
-  color: #ffffff;
-}
-
-img#about-triplen-bag {
-  width: 40%;
-  max-width: 215px;
-}
-img#about-triplen-bag.t {
-  transition: 1.2s;
-}
-img#about-triplen-bag.ma {
-  margin-top: 2rem;
-}
-/* About contenido seguro */
-
-.about-contenido-seguro h3 {
-  color: var(--blue);
-  font-size: 1.95rem;
-  line-height: 3rem;
-}
-
-/* Innovacion-sustentabilidad */
-
-.innovacion-sustentabilidad {
-  background-image: url(img/replen-bg-1.png); /* Reemplazar!! */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.innovacion-sustentabilidad h3 {
-  color: var(--green);
-}
-
-.innovacion-sustentabilidad__imagen img {
-  opacity: 0.8;
-  /* padding: 2rem; */
-}
-
-.innovacion-sustentabilidad__text {
-  background-color: #ffffffd1;
-  /*padding: 15px 20px;*/
-}
-
-#replen-ciclo {
-  background-image: url("./img/replen-ciclo-rm.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  /*	min-width: 385px; */
-  min-height: 384px;
-  max-width: 500px;
-  max-height: 499px;
-}
-#replen-ciclo img {
-  margin: auto;
-  width: 180px;
-}
-#replen-ciclo img.t {
-}
-#replen-ciclo.ma img {
-  -webkit-animation: spin 2s linear;
-  -moz-animation: spin 2s linear;
-  animation: spin 2s linear;
-}
-@-moz-keyframes spin {
-  100% {
-    -moz-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.historia p {
-  font-size: 1.1rem;
-  line-height: 2rem;
-  letter-spacing: 1px;
-}
 .contacto {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -811,54 +759,44 @@ img#about-triplen-bag.ma {
 #whatsapp img {
   width: 100%;
 }
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-prev.slick-arrow{
+	left: 10%;
+	z-index: 999;
+}
+.slick-next.slick-arrow{
+	right: 10%;
+}
+.slick-next:before{
+  background-image: url('./img/flecha-der.svg') !important;
+}
+.slick-prev:before{
+  background-image: url('./img/flecha-izq.svg') !important;
+}
+.slick-next:before,
+.slick-prev:before{
+  display: inline-block;
+  content: "";
+  vertical-align: -.125em;
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  width: 120%;
+  height: 120%;
+}
 @media (min-width: 769px) {
-  #head h1 {
-    font-size: 2.1em;
-  }
   #head #logo,
-  #head h1,
   #head #headerBeneficios {
     padding: 60px;
   }
-  #historia .right-band.blue span {
-    padding: 5px 40px 5px 15px;
-  }
-
-  .right-band {
-    margin-left: 0px;
-    font-size: 1.2em;
-  }
-  #historia h2 {
-    font-size: 2.7em;
-  }
-  h3 {
-    font-size: 2.3em;
-  }
-  #historia #elPolo {
-    padding-left: 80px;
-  }
-  .carousel-control-prev {
-    left: -15%;
-  }
-  .carousel-control-next {
-    right: -15%;
-  }
-
-  #intro {
-  }
-
-  h2,
-  h3 {
-    /* letter-spacing: .5rem; */
-  }
-
-  .historia {
-    margin-top: -50px;
-  }
-  .historia p {
-    font-size: 1.2rem;
-  }
-
   /* Navbar */
 
   .navbar {
@@ -866,18 +804,7 @@ img#about-triplen-bag.ma {
     width: 100%;
   }
 
-  /* Intro-contacto */
-  #intro {
-    padding-top: 8rem;
-  }
-
-  #intro h2 {
-    font-family: "TitilliumWeb-Regular", sans-serif;
-    font-size: 2rem;
-    margin-top: 0rem;
-    padding: 1.5rem 2rem;
-  }
-
+  
   .contacto p {
     font-family: "TitilliumWeb-Light", sans-serif;
     font-size: 0.8rem;
@@ -890,207 +817,57 @@ img#about-triplen-bag.ma {
     margin-bottom: 0;
   }
 
-  /* About-1 */
-
-  .about-1 h2 {
-    /* padding: 3rem 5rem; */
-    font-size: 1.8rem;
-    font-weight: 600;
+  .slick-slide {
+    margin: 0px 40px;
   }
-
-  .icons-1 p {
-    font-size: 1rem;
+  .slick-list{
+    /*overflow: visible;*/
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
   }
-
-  /* About-tricapa */
-
-  #about-tricapa {
-    margin-bottom: -8rem;
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    transform: translate3d(10%, 0, 0) scale(0.9);
+    opacity: .0;
   }
-
-  .about-tricapa-imagen {
-    margin-left: 40px;
-    padding-right: 40px;
+  .slick-current {
+    transform: scale(1.25);
+    opacity: 1;    
   }
-  .about-tricapa-foto img {
-    width: 80%;
+  .slick-current ~ .slick-slide {
+    transform: translate3d(-10%, 0, 0) scale(0.9);
   }
-
-  .about-tricapa-imagen img {
-    width: 80%;
-    margin-top: -3rem;
+  
+  .slick-active {
+    opacity: .5;
   }
-
-  /* About Triplen */
-
-  #about-triplen .row {
-    height: 45rem;
-  }
-
-  .about-triplen__imagen img {
-    width: 11rem;
-  }
-
-  .about-triplen__text {
-    padding-left: 5rem;
-  }
-
-  .about-triplen__text h3 {
-    color: var(--orange);
-    letter-spacing: 0.2rem;
-    margin-top: -7rem;
-    padding-bottom: 3rem;
-    font-size: 1.95rem;
-  }
-
-  .about-triplen__text p,
-  .about-contenido-seguro p,
-  .innovacion-sustentabilidad__text p {
-    line-height: 1.3;
-  }
-
-  /* About-contenido-seguro */
-
-  .about-contenido-seguro {
-    height: 38rem;
-  }
-
-  .about-contenido-seguro h3 {
-    color: #ffffff;
-    margin-top: -12rem;
-    padding-bottom: 3rem;
-  }
-
-  img#contenido-seguro-bolsa {
-    width: 100%;
-    max-width: 878px !important;
-    margin-left: -11rem;
-    margin-top: -25rem;
-  }
-  img#contenido-seguro-bolsa.t {
-    transition: 0.5s;
-  }
-  img#contenido-seguro-bolsa.ma {
-    margin-top: -27rem;
-  }
-  img#contenido-seguro-bolsa.ma15 {
-    margin-top: -29rem;
-  }
-  img#contenido-seguro-bolsa.ma195 {
-    margin-top: -31rem;
-  }
-
-  /* Innovacion-sustentabilidad */
-  .innovacion-sustentabilidad {
-    padding-left: 9rem;
-    /*   padding-bottom: 10rem; */
-  }
-  .innovacion-sustentabilidad h3 {
-    font-size: 1.95rem;
-    line-height: 3rem;
-  }
-  .innovacion-sustentabilidad .img-container {
-    position: relative;
-  }
-  img#reciclable-100 {
-    /* margin-top: -1.8rem; */
-    opacity: 0.9;
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  img#reciclable-100.t {
-    transition: 0.5s;
-  }
-  img#reciclable-100.ma {
-    /* margin-top: -2.5rem; */
-  }
-  #innovacion-sustentabilidad h3 {
-    color: var(--green);
-  }
-
-  .innovacion-sustentabilidad__text {
-    /*padding: 2rem 3.5rem; */
-    height: 100%;
-    margin-left: -12px;
-  }
-}
-.text-justify {
-  text-align: justify;
-}
-
-/*=== Trigger  ===*/
-.animate {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  opacity: 0;
-}
-
-.one {
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-.two {
-  -webkit-animation-delay: 0.6s;
-  -moz-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-.three {
-  -webkit-animation-delay: 0.8s;
-  -moz-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-.four {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
-}
-.five {
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  animation-delay: 1.2s;
-}
-.six {
-  -webkit-animation-delay: 1.4s;
-  -moz-animation-delay: 1.4s;
-  animation-delay: 1.4s;
-}
-
-/*=== FADE IN DOWN ===*/
-@-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
+  .slick-center{
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
   }
-}
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
+  .slick-prev.slick-arrow{
+    left: 20%;
+    z-index: 999;
   }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+  .slick-next.slick-arrow{
+    right: 20%;
   }
 }
 
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+#section4carousel{
+  padding-top: 110px;
+}
+
+#logoContainer2{
+  line-height: 2.1em;
+}
+@media (max-width: 575px){
+  #headerContent {
+      padding-left: 3rem;
+      height: 100%;
+      padding-bottom: 10px;
+      padding-top: 10rem;
+  }
+  #head form {
+    margin-top: 0%;
+  }
 }

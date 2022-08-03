@@ -19,6 +19,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="slick-theme.css?a=ad25asd4ab3">
     <link rel="stylesheet" href="style.css?a=2aa3sdfasasdads33dsas4" />
     <title>Yuma | Distribuidores mayoristas</title>
     <!-- Google Tag Manager -->
@@ -32,7 +34,7 @@
     <!-- Intro -->
     <section id="head" class="sectionHero container-fluid">
       <div id="primerDiv" class="row">
-        <div id="logoContainer" class="col-md-5">
+        <div id="logoContainer" class="col-12 col-md-5 offset-md-1">
           <div>
             <img
               id="logoPosta"
@@ -41,83 +43,70 @@
               height="70px"
               data-aos="fade-up"
             />
+            <a href="https://www.instagram.com/" target="_blank"
+              style="float: right;margin-top: 20px;"
+            ><img
+              id="instaHeader"
+              class="social"              
+              src="./img/instagram-verde.svg"
+              alt="Instagram"
+              title="Instagram"
+          /></a>
           </div>
-          <div>
+          <div id="headerContent" class="d-md-flex flex-md-column justify-content-center">
             <img id="iGriega1" class="griega" src="img/igriega.svg" alt="" />
+            
+            <h1 class="verdeP negritaP">
+              Somos distribuidores <br />
+              mayoristas
+            </h1>
+            <h2 class="verdeP">
+              Descubrí nuestra nueva <br />línea de cristalería
+            </h2>
           </div>
-
-          <p class="verdeP negritaP">
-            Somos distribuidores <br />
-            mayoristas
-          </p>
-          <p class="verdeP">
-            Descubrí nuestra nueva <br />línea de cristalería
-          </p>
         </div>
 
-        <div id="formContainer" class="col-md-4 bg-marca">
-          <form id="theForm">
+        <div id="formContainer" class="col-12 col-md-4 offset-md-1 bg-marca">
+          <form class="contactForm" action='https://forms.zohopublic.com/mgarciadutriez/form/YumaCristalera/formperma/UI91QnSX-EyldKLjlQotxwrnvcrE0fkA923KGmEsk1s/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
             <p class="blancoP">
               Dejanos tus datos y te contactará un asesor comercial
             </p>
-            <div id="formLeft" class="formSide">
-              <div class="form-item">
-                <input
-                  type="text"
-                  class="form-control theInput"
-                  id="nombreApellido"
-                  placeholder="Nombre y apellido"
-                />
-              </div>
-              <div class="form-item">
-                <input
-                  type="text"
-                  class="form-control theInput"
-                  id="empresa"
-                  placeholder="Empresa"
-                />
-              </div>
-              <div class="form-item">
-                <input
-                  type="text"
-                  class="form-control theInput"
-                  id="ciudad"
-                  placeholder="Ciudad"
-                />
-              </div>
-              <div class="form-item">
-                <input
-                  type="email"
-                  class="form-control theInput"
-                  id="correo-electronico"
-                  placeholder="Correo electrónico"
-                />
-              </div>
+            <div class="mb-3 campo">
+            <input type="text" maxlength="255" name="Name_First" fieldType=7 class="form-control form-control-lg required rounded-0" id="nombre" placeholder="Nombre">
             </div>
-            <div id="formRight" class="formSide">
-              <div class="form-item">
-                <input
-                  type="text"
-                  class="form-control theInput"
-                  id="telefono"
-                  placeholder="Teléfono"
-                />
-              </div>
-              <div class="form-item">
-                <textarea
-                  class="form-control theInput"
-                  id="consulta"
-                  rows="3"
-                  placeholder="Mensaje"
-                ></textarea>
-              </div>
-              <div class="form-item">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="mb-3 campo ml">
+            <input type="text" maxlength="255" name="Name_Last" fieldType=7 class="form-control form-control-lg required rounded-0" id="apellido" placeholder="Apellido">
+            </div>
+            <div class="mb-3 campoFull">
+            <input type="text" name="SingleLine" value="" id="SingleLine" class="form-control form-control-lg required rounded-0" placeholder="Nombre del comercio">
+            </div>
+            <div class="mb-3 campoFull">
+            <input type="text" name="SingleLine1" value="" id="SingleLine1" class="form-control form-control-lg required rounded-0" placeholder="Localidad">
+            </div>
+            <div class="mb-3 campoFull">
+            <input type="text" maxlength="255" name="Email" value="" fieldType=9 class="form-control form-control-lg required email rounded-0" id="email" placeholder="Email">
+            </div>
+            <div class="mb-3 campoFull">
+            <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value="" fieldType=11 id="international_PhoneNumber_countrycode" class="form-control form-control-lg required rounded-0" placeholder="Teléfono">
+            </div>
+            <div class="mb-3 campoFull">
+              <textarea name="MultiLine" maxlength="65535" rows="3" class="form-control form-control-lg required rounded-0" id="consulta" placeholder="Consulta"></textarea>
+            </div>
+            <div class="mb-3 campoFull">
+              <div class="g-recaptcha" data-sitekey="6Lcr9zQgAAAAAGBifJC7pk0HZO9qv7lb9jxcu8J8"></div>
+            </div>
+            <div class="mt-4">
+              <div class="btnConainer">
+                <div class="">
+                <button type="submit" class="btnSbmt btn btn-primary ls-4">Enviar</button></div>
+                <div class="success circle hidden"><div class="spinner-border" role="status">
+                <span class="sr-only "></span>
+                </div></div>
               </div>
             </div>
           </form>
         </div>
-        <div id="socialContainer" class="col-md-1">
+        <div id="socialContainer" class="d-none d-md-block col-md-1">
           <a href="https://www.instagram.com/" target="_blank"
             ><img
               id="instaHeader"
@@ -129,13 +118,13 @@
         </div>
       </div>
     </section>
-    <section id="section2" class="container">
+    <section id="section2" class="container-fluid">
       <div class="row padingueado">
-        <div id="left2" class="leftDiv col-md-4">
+        <div id="left2" class="leftDiv col-12 col-md-4 offset-md-1">
           <img src="img/red.svg" alt="" class="redSvg" />
           <img class="img-fluid zindexMio" src="img/Recurso 3.png" alt="" />
         </div>
-        <div id="right2" class="rightDiv col-md-8">
+        <div id="right2" class="rightDiv mt-4 mt-md-0 col-12 col-md-6">
           <img class="griega" src="img/igriega.svg" alt="" />
           <p class="verdeP sizeBig">COPAS BRUNELLO</p>
           <p class="verdeP cursivaP sizeNoTanBig">
@@ -149,9 +138,9 @@
         </div>
       </div>
     </section>
-    <section id="section3" class="container">
+    <section id="section3" class="container-fluid">
       <div class="row">
-        <div id="left3" class="leftDiv col-md-8 sizeBig">
+        <div id="left3" class="leftDiv col-md-6 col-12 offset-md-1 sizeBig">
           <div id="textContainerTop">
             <p class="verdeP negritaP">Brindamos productos de calidad.</p>
             <p class="verdeP cursivaP">
@@ -167,86 +156,98 @@
             </p>
           </div>
         </div>
-        <div id="right3" class="rightDiv col-md-4">
-          <img src="img/red.svg" alt="" class="redSvg2" />
+        <div id="right3" class="rightDiv col-12 col-md-4">
+          <img src="img/red.svg" alt="" class="redSvg2 d-none d-md-block" />
           <img src="img/Recurso 4.png" alt="" class="img-fluid zindexMio" />
         </div>
       </div>
     </section>
-    <section id="section4carousel" class="container"></section>
-    <section id="section5" class="container pt-5 pb-5 mt-5 mb-5">
+
+    <section id="section4carousel" class="container mb-4">
+      <div class="slickSlide d-none d-md-block" id="sliderDskt">
+        <div>
+          <img src="./img/galeria-2.png" />
+        </div>
+        <div>
+          <img src="./img/galeria-1.png" />
+        </div>
+        <div>
+          <img src="./img/galeria-3.png" />
+        </div>
+        <div>
+          <img src="./img/galeria-2.png" />
+        </div>
+        <div>
+          <img src="./img/galeria-1.png" />
+        </div>
+        <div>
+          <img src="./img/galeria-3.png" />
+        </div>
+      </div>
+      <div class="slickSlide d-md-none" id="sliderMob">
+        <div>
+          <img src="./img/galeria-2.png" />
+        </div>
+        <div>
+          <img src="./img/galeria-1.png" />
+        </div>
+        <div>
+          <img src="./img/galeria-3.png" />
+        </div>
+      </div>
+    </section>
+    
+    <section id="section5" class="container pt-5 pb-5 mt-4 mb-5">
       <div class="row pt-5 pb-5">
         <div id="primerDiv2" class="row">
-          <div id="logoContainer2" class="col-md-6">
+          <div id="logoContainer2" class="col-12 col-md-6 offset-md-1 text-end">
             <p class="verdeP sizeBig negritaP">
-              Somos una empresa que ofrecemos <br />
-              productos de bazar, propuestas deco, <br />
-              textiles, muebles y mucho más.
+              Somos una empresa que ofrecemos <br class="d-none d-md-block" />
+              productos de bazar, propuestas deco, <br class="d-none d-md-block" />
+              textiles, muebles <br class="d-md-none" />y mucho más.
             </p>
             <p class="verdeP sizeBig cursivaP">
-              Contamos con una selección de cristalería <br />
-              para hotelería con copas, vasos y artículos <br />
+              Contamos con una selección de cristalería <br class="d-none d-md-block" />
+              para hotelería con copas, vasos y artículos <br class="d-none d-md-block" />
               de excelente calidad y resistencia.
             </p>
           </div>
-          <div id="formContainer2" class="col-md-4">
-            <form id="theForm2">
-              <p class="verdeP sizeNoTanTanBig">
+          <div id="formContainer2" class="mt-4 mt-md-0 col-12 col-md-4">
+            <form class="contactForm" action='https://forms.zohopublic.com/mgarciadutriez/form/YumaCristalera/formperma/UI91QnSX-EyldKLjlQotxwrnvcrE0fkA923KGmEsk1s/htmlRecords/submit' name='form' id='form2' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
+              <p class="verdeP">
                 Dejanos tus datos y te contactará un asesor comercial
               </p>
-              <div id="formLeft" class="formSide">
-                <div class="form-item">
-                  <input
-                    type="text"
-                    class="form-control theInput2"
-                    id="nombreApellido"
-                    placeholder="Nombre y apellido"
-                  />
-                </div>
-                <div class="form-item">
-                  <input
-                    type="text"
-                    class="form-control theInput2"
-                    id="empresa"
-                    placeholder="Empresa"
-                  />
-                </div>
-                <div class="form-item">
-                  <input
-                    type="text"
-                    class="form-control theInput2"
-                    id="ciudad"
-                    placeholder="Ciudad"
-                  />
-                </div>
-                <div class="form-item">
-                  <input
-                    type="email"
-                    class="form-control theInput2"
-                    id="correo-electronico"
-                    placeholder="Correo electrónico"
-                  />
-                </div>
+              <div class="mb-3 campo">
+              <input type="text" maxlength="255" name="Name_First" fieldType=7 class="form-control form-control-lg required rounded-0" id="nombre" placeholder="Nombre">
               </div>
-              <div id="formRight" class="formSide">
-                <div class="form-item">
-                  <input
-                    type="text"
-                    class="form-control theInput2"
-                    id="telefono"
-                    placeholder="Teléfono"
-                  />
-                </div>
-                <div class="form-item">
-                  <textarea
-                    class="form-control theInput2"
-                    id="consulta"
-                    rows="3"
-                    placeholder="Mensaje"
-                  ></textarea>
-                </div>
-                <div class="form-item">
-                  <button type="submit" class="btn btn-primary">Enviar</button>
+              <div class="mb-3 campo ml">
+              <input type="text" maxlength="255" name="Name_Last" fieldType=7 class="form-control form-control-lg required rounded-0" id="apellido" placeholder="Apellido">
+              </div>
+              <div class="mb-3 campoFull">
+              <input type="text" name="SingleLine" value="" id="SingleLine" class="form-control form-control-lg required rounded-0" placeholder="Nombre del comercio">
+              </div>
+              <div class="mb-3 campoFull">
+              <input type="text" name="SingleLine1" value="" id="SingleLine1" class="form-control form-control-lg required rounded-0" placeholder="Localidad">
+              </div>
+              <div class="mb-3 campoFull">
+              <input type="text" maxlength="255" name="Email" value="" fieldType=9 class="form-control form-control-lg required email rounded-0" id="email" placeholder="Email">
+              </div>
+              <div class="mb-3 campoFull">
+              <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value="" fieldType=11 id="international_PhoneNumber_countrycode" class="form-control form-control-lg required rounded-0" placeholder="Teléfono">
+              </div>
+              <div class="mb-3 campoFull">
+                <textarea name="MultiLine" maxlength="65535" rows="3" class="form-control form-control-lg required rounded-0" id="consulta" placeholder="Consulta"></textarea>
+              </div>
+              <div class="mb-3 campoFull">
+                <div class="g-recaptcha" data-sitekey="6Lcr9zQgAAAAAGBifJC7pk0HZO9qv7lb9jxcu8J8"></div>
+              </div>
+              <div class="mt-4">
+                <div class="btnConainer">
+                  <div class="">
+                  <button type="submit" class="btnSbmt btn btn-primary ls-4">Enviar</button></div>
+                  <div class="success circle hidden"><div class="spinner-border" role="status">
+                  <span class="sr-only "></span>
+                  </div></div>
                 </div>
               </div>
             </form>
@@ -257,12 +258,12 @@
     <footer>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-8 offset-md-2">
+          <div class="col-12 col-md-10 offset-md-1">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-6">
                 <img id="logoFooter" src="./img/logo-blanco.svg" class="" />
               </div>
-              <div class="col-md-6 text-end">
+              <div class="col-6 text-md-end">
                 <a
                   href="https://api.whatsapp.com/send/?phone=5491136892832"
                   target="_blank"
@@ -304,41 +305,69 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"
+    async defer>
+  </script>
+  
+  
     <script type="text/javascript">
       $(document).ready(function () {
         AOS.init({
           once: true,
         });
 
+      $("#section4carousel #sliderDskt").slick({
+          infinite: true,
+          centerMode: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: false,
+          speed: 300,
+          arrows: true,
+          
+        });
+        $('#sliderMob.slickSlide').slick({
+            centerMode: true,
+            centerPadding: '0px',
+            slidesToShow: 1,
+            autoplay: true,
+        });
         //window.onscroll = function() {animateScroll()};
 
-        $("#btnSbmt").on("click", function (e) {
+        $(".btnSbmt").on("click", function (e) {
           e.preventDefault();
-          $(".form-control theInput").removeClass("error");
-          $("#btnConainer > div").toggleClass("hidden");
+          
+          $(".form-control").removeClass("error");
+          $(".btnConainer > div").toggleClass("hidden");
+          
+          var form = $(this).parents(".contactForm");
           var valid = true;
-          $("form input[type='text'], form textarea, form select").each(
-            function (e, i) {
+          form.find("input[type='text'],  textarea,  select").each(function(e,i){
               if ($(this).hasClass("required")) {
                 if ($(this).val().trim() == "") {
                   $(this).addClass("error");
                   valid = false;
                 }
               }
-            }
-          );
-          $("form .email").each(function (e, i) {
-            if (!validateEmail($(this).val().trim())) {
+          });
+          form.find(".email").each(function(e,i){
+            if(!validateEmail($(this).val().trim())){
               $(this).addClass("error");
               valid = false;
             }
           });
-
+          var response = form.index('form') == 0 ? grecaptcha.getResponse(0) : grecaptcha.getResponse(1);
+          if(response.trim().length == 0){
+            valid = false;
+            $(".g-recaptcha > div").first().addClass("error");
+          }	
           if (valid) {
-            $("#contactForm").submit();
+            form.submit();
           } else {
-            $("#btnConainer > div").toggleClass("hidden");
+            $(".btnConainer > div").toggleClass("hidden");
           }
         });
       });
